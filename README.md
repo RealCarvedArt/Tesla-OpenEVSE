@@ -21,7 +21,7 @@
 - Mounted the OpenEVSE WiFi Controller under the cable end socket so the status LEDs eliminate the original sight window on the Tesla Gen 2 housing cover
 - Opted not to cut the Tesla Gen 2 housing or cover to mount the OpenEVSE LCD Screen to retain the watertight seal
 - The original Tesla Gen 2 Reset Button could be utilized to actuate the optional button (Button Menu) on the OpenEVSE LCD Screen by adding a Jst 2.0 Ph 3 Pin pigtail
-- Was able to retain all of the Tesla Gen 2 factory terminations on the cable by carefully bending the fork-type terminal ends to just push through the OpenEVSE AMP & GFCI Coils (Much patients & calculated alignment of each cable is required)</br>
+- Was able to retain all of the Tesla Gen 2 factory terminations on the cable by carefully bending the fork-type terminal ends to just push through the OpenEVSE AMP & GFCI Coils (Much patients & calculated alignment of each cable & terminal is required)</br>
 
 ## Some pics of how it fits...
 
