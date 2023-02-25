@@ -1,4 +1,4 @@
-# Tesla-OpenEVSE
+# Tesla-OpenEVSE → Using a Tesla Wall Connector Gen 2 (HPWC) housing and a Tesla 24' whip
 
 ## Some pics of how it fits...
 
