@@ -1,5 +1,19 @@
 # Tesla-OpenEVSE → Using a Tesla Wall Connector Gen 2 (HPWC) housing and a Tesla 24' whip
 
+## Tesla Gen 2 HPWC Cable to OpenEVSE Kit
+
+### Large Gauge
+🔴	**RED** → AC Lead 1</br>
+⚫	**BLACK** → AC Lead 2</br>
+🟢/🟡	**GREEN/YELLOW** → Earth Ground</br>
+
+### Small Gauge
+🟣	**PURPLE** → Control Pilot → OpenEVSE Controller Pilot [PLT] connector</br>
+🔵	**BLUE** → Charge port transmitter → 3.3v output of the WiFi Controller (To use an OpenEVSE 5v output add a few diodes in series to drop the voltage down a bit)</br>
+⚫	**BLACK** → not used</br>
+🟠	**ORANGE** → not used</br>
+⚪	**WHITE** → not used</br></br>
+
 ## Some pics of how it fits...
 
 ![1](https://user-images.githubusercontent.com/78761379/220809885-8755c537-41ca-4bbf-84e0-f65cdb705790.jpg)
