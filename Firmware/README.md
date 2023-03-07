@@ -18,6 +18,22 @@
 </br>
 
 ***NOTE:*** ```Warning can not set SCK period``` is normal and can be ignored
+
+</br>
+Sample flash.bat:
+
+```
+@echo off
+avrdude -c USBasp -p m328p -U lfuse:w:0xFF:m -U hfuse:w:0xDF:m -U efuse:w:0x05:m 
+avrdude -V -c USBasp -p m328p -U flash:w:openevse.hex 
+avrdude -V -c USBasp -p m328p -U eeprom:w:eeprom_24.bin 
+@echo   
+echo Last Flash Performed at:
+time /T
+pause
+flash.bat
+```
+
 </br></br>
 
 ## Flashing Tips:
