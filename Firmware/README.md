@@ -17,7 +17,8 @@
 
 </br>
 
-***NOTE:*** ```Warning can not set SCK period``` is normal with older firmware and can be ignored
+> ***NOTE:*** ```Warning can not set SCK period``` is normal with older firmware and can be ignored
+> To fix this error you need to update your USBasp firmware
 
 </br>
 SAMPLE batch file (flash.bat):
@@ -68,9 +69,9 @@ If you recieve error:</br>
 
 </br></br>
 
-# How to Flash the USBasp Firmware (in Windows with a USBasp)
+# ADVANCED - How to Flash the USBasp Firmware (in Windows with a USBasp)
 
-Download the latest version of USBasp firmware from:  (http://www.fischl.de/usbasp/)
+Download the latest version of USBasp firmware from: (http://www.fischl.de/usbasp/) or to make your USBasp WCID compliment use the firmware in the xxxxxx directory
 - Extract the firmware from the bin\firmware\ directory in the tar.gz file (You can use 7-Zip to extract)
 - Put the firmware into an empty directory
 
