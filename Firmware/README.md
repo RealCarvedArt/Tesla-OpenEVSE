@@ -17,7 +17,7 @@
 
 </br>
 
-***NOTE:*** ```Warning can not set SCK period``` is normal and can be ignored
+***NOTE:*** ```Warning can not set SCK period``` is normal with older firmware and can be ignored
 
 </br>
 SAMPLE batch file (flash.bat):
