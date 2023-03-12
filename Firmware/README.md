@@ -114,7 +114,7 @@ pause
              Copyright (c) 2007-2009 Joerg Wunsch
     ```
 
-    \- or - (You can simply copy the latest avrdude files into the C:\WinAVR-20100110\bin\ directory to update)
+    \- or - (You can simply copy the [latest avrdude files](https://github.com/avrdudes/avrdude/releases/) into the C:\WinAVR-20100110\bin\ directory to update)
 
     ```
     avrdude: Version 7.1
