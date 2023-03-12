@@ -80,7 +80,7 @@ Create a batch file named USBaspFirmware.bat and put in in the same directory
 SAMPLE batch file using the original firmware (USBaspFirmware.bat):
 
 ```
-@echo off
+@echo on
 avrdude -v -c usbasp -p m8 -U flash:w:usbasp.atmega8.2011-05-28.hex:i
 pause
 ```
@@ -88,7 +88,7 @@ pause
 SAMPLE batch file using the WCID compliant firmware (USBaspWCIDFirmware.bat):
 
 ```
-@echo off
+@echo on
 avrdude -v -c usbasp -p m8 -U flash:w:usbasp.atmega8.2022-07-16.hex:i
 pause
 ```
@@ -132,3 +132,74 @@ On the USBasp that you want to update the firmware on:
 - Run the USBaspFirmware.bat
 
 ![USBasp2USBasp](https://user-images.githubusercontent.com/78761379/224511002-757b1bc3-0bab-4c77-8501-935081e989cc.png)
+
+A successful flash of an ATmega8 using the WCID firmware looks like this:
+
+```
+
+C:\Users\RealCarvedArt\Desktop\USBasp>avrdude -v -c usbasp -p m8 -U flash:w:usbasp.atmega8.2022-07-16.hex:i
+
+avrdude: Version 7.1
+         Copyright the AVRDUDE authors;
+         see https://github.com/avrdudes/avrdude/blob/main/AUTHORS
+
+         System wide configuration file is C:\WinAVR-20100110\bin\avrdude.conf
+
+         Using Port                    : usb
+         Using Programmer              : usbasp
+         AVR Part                      : ATmega8
+         Chip Erase delay              : 10000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         Serial program mode           : yes
+         Parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                           Block Poll               Page                       Polled
+           Memory Type Alias    Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- -------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom                  4    20   128    0 no        512    4      0  9000  9000 0xff 0xff
+           flash                  33    10    64    0 yes      8192   64    128  4500  4500 0xff 0x00
+           lfuse                   0     0     0    0 no          1    1      0  2000  2000 0x00 0x00
+           hfuse                   0     0     0    0 no          1    1      0  2000  2000 0x00 0x00
+           lock                    0     0     0    0 no          1    1      0  2000  2000 0x00 0x00
+           signature               0     0     0    0 no          3    1      0     0     0 0x00 0x00
+           calibration             0     0     0    0 no          4    1      0     0     0 0x00 0x00
+
+         Programmer Type : usbasp
+         Description     : USBasp, http://www.fischl.de/usbasp/
+
+avrdude: auto set sck period (because given equals null)
+avrdude usbasp_spi_set_sck_period() error: cannot set sck period; please check for usbasp firmware update
+avrdude: AVR device initialized and ready to accept instructions
+avrdude: device signature = 0x1e9307 (probably m8)
+avrdude: Note: flash memory has been specified, an erase cycle will be performed.
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: auto set sck period (because given equals null)
+avrdude usbasp_spi_set_sck_period() error: cannot set sck period; please check for usbasp firmware update
+avrdude: reading input file usbasp.atmega8.2022-07-16.hex for flash
+         with 5670 bytes in 1 section within [0, 0x1625]
+         using 89 pages and 26 pad bytes
+avrdude: writing 5670 bytes flash ...
+
+Writing | ################################################## | 100% 6.77 s
+
+avrdude: 5670 bytes of flash written
+avrdude: verifying flash memory against usbasp.atmega8.2022-07-16.hex
+
+Reading | ################################################## | 100% 5.61 s
+
+avrdude: 5670 bytes of flash verified
+
+avrdude done.  Thank you.
+
+```
