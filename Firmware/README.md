@@ -114,7 +114,7 @@ pause
              Copyright (c) 2007-2009 Joerg Wunsch
     ```
 
-    or
+    \- or - (You can simply copy the latest avrdude files into the C:\WinAVR-20100110\bin\ directory to update)
 
     ```
     avrdude: Version 7.1
@@ -129,7 +129,7 @@ On the USBasp that you want to update the firmware on:
 - Apply a jumper across the "Self Program" pins
 - Connect a second USBasp via the 10-pin cable (The USBasp to be flashed must have a jumper on the "Self Program" pins and the flashing USBasp must be open)
 - Then plug the second USBasp into a USB port on the PC (The one without the jumper)
-- Run the USBaspFirmware.bat
+- Run the USBaspFirmware.bat -or- USBaspWCIDFirmware.bat
 
 ![USBasp2USBasp](https://user-images.githubusercontent.com/78761379/224511002-757b1bc3-0bab-4c77-8501-935081e989cc.png)
 
