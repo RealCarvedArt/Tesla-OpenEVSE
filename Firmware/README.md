@@ -71,7 +71,7 @@ If you receive error:</br>
 
 # ADVANCED - How to Flash the USBasp Firmware (in Windows with a USBasp)
 
-Download the latest version of USBasp firmware from: (http://www.fischl.de/usbasp/) or to make your USBasp WCID compliant use the firmware in the USBasp-Firmware directory
+Download the latest version of USBasp firmware from: (http://www.fischl.de/usbasp/) or to make your USBasp WCID compliant use the firmware in the [USBasp-Firmware](https://github.com/RealCarvedArt/Tesla-OpenEVSE/tree/main/Firmware/USBasp-Firmware) directory
 - Extract the firmware from the bin\firmware\ directory in the tar.gz file (You can use 7-Zip to extract)
 - Put the firmware into an empty directory
 
