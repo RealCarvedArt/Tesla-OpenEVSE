@@ -1,18 +1,18 @@
 # How to Flash the OpenEVSE Firmware (in Windows with a USBasp)
 
-- Download Zadig http://zadig.akeo.ie/
+- Download Zadig (http://zadig.akeo.ie/)
 - Plug in your USBasp
 - Run Zadig
   - USBasp should be detected and appear in the dropdown box
     - If it does not show up, select **Options** and **List All Devices**
   - **Make sure USBasp is selected** (You don't want to accidentally flash something on your PC)
   - Install the **libusbK** driver; if it doesn't work, use the **libusb-win32** driver instead
-- Download and install WinAVR http://sourceforge.net/projects/winavr/files/latest/download
+- Download and install WinAVR (http://sourceforge.net/projects/winavr/files/latest/download)
   - Select BOTH:
     - **[x] Install Files**
     - **[x] Add Directories to PATH (Recommended)**
 - Connect the USBasp cable to the OpenEVSE then plug the USBasp into a USB port on the PC
-- Download a pre-compiled HEX, BIN, and BAT files from the OpenEVSE Sources https://github.com/OpenEVSE/open_evse/releases and put them into the same directory
+- Download a pre-compiled HEX, BIN, and BAT files from the OpenEVSE Sources (https://github.com/OpenEVSE/open_evse/releases) and put them into the same directory
 - Run the flash.bat
 
 </br>
