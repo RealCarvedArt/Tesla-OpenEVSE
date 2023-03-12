@@ -12,7 +12,7 @@ This USBasp firmware is based on a [fork by Ralph Doncaster](https://github.com/
 
 - From version 1.10 USBasp WCID switch to Microsoft OS 2.0 Descriptors. It seems that it play better with USB 3.0 ports.
 
-> Note: A prebuilt hex file for the ATmega8 (usbasp.atmega8.2022-07-16.hex) and one for the ATmega88 (usbasp.atmega88.2022-07-16.hex) are in the USBasp-Firmware directory. Built with [MSYS2](https://www.msys2.org/) and [avr8-gnu-toolchain (3.6.2.17778)](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers) from Microchip, on a Windows 10 box.
+> ***NOTE:*** A prebuilt hex file for the ATmega8 (usbasp.atmega8.2022-07-16.hex) and one for the ATmega88 (usbasp.atmega88.2022-07-16.hex) are in the USBasp-Firmware directory. Built with [MSYS2](https://www.msys2.org/) and [avr8-gnu-toolchain (3.6.2.17778)](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers) from Microchip, on a Windows 10 box.
 
 
 ### Visit the original repo [dioannidis/usbasp](https://github.com/dioannidis/usbasp) for HID UART use and original content
