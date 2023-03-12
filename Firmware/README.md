@@ -17,7 +17,7 @@
 
 </br>
 
-> ***NOTE:*** ```Warning cannot set SCK period``` is normal with older firmware and can be ignored
+> ***NOTE:*** ``` error: cannot set sck period; please check for usbasp firmware update ``` is normal with older firmware and can be ignored
 > To fix this error you need to update your USBasp firmware
 
 </br>
